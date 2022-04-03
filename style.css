@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Tangerine;
+  src: url("./fonts/Tangerine-Regular.ttf");
+}
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  height:78%;
+  background-color: #F0F9F9;
+}
+
+.myNavbar {
+  height:10%;
+  position:sticky;
+}
+
+.intro {
+  text-align: center;
+  font-size: 35px;
+  padding-top:50px;
+  font-style: italic;
+  font-family: cursive;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  color: #2E0E87;
+}
+
+.about-me {
+  padding-top:30px;
+  margin-left:120px;
+  width:67%;
+  font-size: 17px;
+}
+
+.indented {
+  text-indent: 5px;
+}
+
+#hyphen {
+  font-size: 50;
+  font-weight: bolder;
+  letter-spacing: -6px;
+}
+
+#wordsCarousel {
+  text-align: center;
+  position: relative;
+  bottom: -150px;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bolder;
+  color:#1B3D81;
+  font-family: serif, sans-serif;
+}
+
+.myFooter {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:15%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.myFooter > span {
+  width:33%;
+  margin-left:15px;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.about-my-work > h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Tangerine", sans-serif;
+  font-size: 55px;
+}
+
+.about-my-work > p {
+  text-align:center;
+}
+
+#links {
+  text-align: right;
+}
+
+#linkedin {
+  height:9%;
+  width: 9%;
+}
+
+#twitter {
+  height:9%;
+  width:9%;
+  margin-left:20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  #wordsCarousel {
+    position:relative;
+    bottom: -90px;
+    font-size: 28px;
+  }
+
+  #linkedin {
+    width:20%;
+    height:20%;
+  }
+
+  #twitter {
+    width:20%;
+    height:20%;
+    margin-left: 20px;
+  }
+
+  .intro {
+    font-size: 25px;
+  }
+
+  .about-me {
+    overflow: hidden;
+
+  }
+
+  .myFooter {
+    position: relative;
+    top: 650px;
+  }
+}
